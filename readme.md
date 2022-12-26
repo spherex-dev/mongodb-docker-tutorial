@@ -10,3 +10,7 @@ If you wish to reset the database to it's original state and re-create the root 
 ## Testing authentication
 
 Once the database is running, MongoDB authentication can be tested using the following command: `docker exec -it mongodb-docker-tutorial-mongo-1 mongosh -u admin -p admin`. Adjust the username and admin as necessary if changes have been made to either variables. If you end up using this docker compose file and commit it somewhere, it is best to not commit the username and password as part of the docker-compose, but rather delete them from the file instead. To test that logins that are incorrect, change the command to `docker exec -it mongodb-docker-tutorial-mongo-1 mongosh -u admin -p wrong_password` or something appropriate to see that authentication fails with the incorrect password.
+
+## Full Tutorial Notes
+
+A full tutorial on how to run MongoDB 6 with docker, with configuration considerations is provided [here](https://www.spherex.dev/running-monodb-with-docker/). Which provides sample command to do a quick start of the MongoDB with just basic docker commands and with docker compose, as well as providing considerations on dealing with a database with potentially large amounts of data.
