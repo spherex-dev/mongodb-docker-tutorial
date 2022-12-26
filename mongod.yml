@@ -1,0 +1,7 @@
+net:
+  bindIpAll: true
+  port: 27017
+security:
+  authorization: disabled
+storage:
+  dbPath: /data/db
